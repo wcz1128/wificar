@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.longene.hippo.wificar.MainActivity">
 
-
-
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true"
         android:background="#ffc8bfe7"
-        android:id="@+id/id_btn_bottombar">
+        android:id="@+id/id_btn_bottombar"
+>
     </LinearLayout>
 
     <FrameLayout
@@ -24,4 +22,5 @@
         android:layout_above="@id/id_btn_bottombar"
         />
 
-</android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

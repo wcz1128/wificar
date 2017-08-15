@@ -3,7 +3,6 @@ package com.longene.hippo.wificar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +24,8 @@ public class VideoFragment extends Fragment {
         SetToast("进入控制面板");
         mzhuaziview = new GL2JNIView(((MainActivity)getActivity()).getApplication());
         mzhuaziview.setzhuaziRender();
-        FrameLayout.LayoutParams zhuaziFL = new FrameLayout.LayoutParams(640, 480, Gravity.RIGHT|Gravity.TOP);//W H  右上角
+        //FrameLayout.LayoutParams zhuaziFL = new FrameLayout.LayoutParams(640, 480, Gravity.RIGHT|Gravity.TOP);//W H  右上角
+        FrameLayout.LayoutParams zhuaziFL = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);//W H  右上角
         zhuaziFL.setMargins(0, 0, 0, 0);  // 设置内边距，如果占满屏幕就可以指定位置了
         mzhuaziview.setLayoutParams(zhuaziFL);
 

@@ -339,7 +339,7 @@ public class GL2JNIView extends GLSurfaceView {
             }
         }
 
-        public native String stringFromJNI();
+        //public native String stringFromJNI();
         public static native void init(int width, int height);
         public static native void step();
         public static native void initzhuazi(int width, int height);
